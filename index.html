@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Multi Step Form | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="progress-bar">
+        <div id="step" class="step">
+          <p></p>
+          <div class="bullet">
+            <span>
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p></p>
+          <div class="bullet">
+            <span>
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p></p>
+          <div class="bullet">
+            <span>
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p></p>
+          <div class="bullet">
+            <span>
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p></p>
+          <div class="bullet">
+            <span>
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p></p>
+          <div class="bullet">
+            <span>
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p></p>
+          <div class="bullet">
+            <span>
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p></p>
+          <div class="bullet">
+            <span>
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+     
+      <div class="form-outer">
+        <form action="#" name="Form">
+          <div id="step-1" class="page slide-page">
+            <div class="title">
+              How much debt do you have?
+
+            </div>
+            <div class="quiz-answers">
+              <div  onclick="step()" class="quiz-answers__item " tabindex="0" role="button"><div class="checkbox"></div> £0 - £2,000</div>
+              <div  onclick="step()" class="quiz-answers__item " tabindex="0" role="button"><div class="checkbox"></div>£2,000 - £6,000</div>
+              <div  onclick="step()" class="quiz-answers__item " tabindex="0" role="button"><div class="checkbox"></div>£6,000 - £20,000</div>
+              <div  onclick="step()" class="quiz-answers__item " tabindex="0" role="button"><div class="checkbox"></div>£20,000+</div>
+          </div>
+          <div class="app_question_support">
+            <p class="app_question_support_heading">Why are we asking this question?</p>
+            <p>When considering your debt level remember to include the following commonly missed debts: HMRC, rent arrears, bailiff enforcements and council tax.</p>
+        </div>
+            
+          </div>
+
+          <div id="step-1"  class="page">
+           
+              <div class="title">How many people do you owe money to?</div>
+              
+              <div class="quiz-answers">
+                  <div onclick="step2()" class="quiz-answers__item next-1a next" tabindex="0" role="button">2 or more</div>
+                  <div onclick="step2()" class="quiz-answers__item next-1b next" tabindex="0" role="button">Less than 2</div>
+  
+              </div>
+              <div class="app_question_support">
+                  <p class="app_question_support_heading">Why are we asking this question?</p>
+                  <p>Notifying of this will allow us to tailor our advice to ensure you receive individual support.</p>
+                  </div>
+                  <button class="quiz-controls__previous prev-1 prev" style="display: inline-block;"><img src="arrow-previous.svg"> Previous Question </button>
+  
+          </div>
+            
+          
+
+          <div id="step-1"  class="page">
+            
+
+              <div class="title">What type of property do you live in</div>
+              
+              <div class="quiz-answers">
+                  <div onclick="step3()" class="quiz-answers__item " tabindex="0" role="button"><div class="quiz-checkbox"></div>Owned</div>
+                  <div onclick="step3()" class="quiz-answers__item " tabindex="0" role="button"><div class="quiz-checkbox"></div>Rented</div>
+                  <div onclick="step3()" class="quiz-answers__item " tabindex="0" role="button"><div class="quiz-checkbox"></div>Private Rented</div>
+                  <div onclick="step3()" class="quiz-answers__item " tabindex="0" role="button"><div class="quiz-checkbox"></div>Living with Parents</div>
+                  
+              </div>
+  
+              <div class="app_question_support">
+                    <p class="app_question_support_heading">Why are we asking this question?</p>
+                    <p>Discussing your living arrangements is important to ensure we provide appropriate advice and allows us to work to ensure your property is not at risk.</p>
+                  </div>
+                  <button class="quiz-controls__previous prev-2 prev" style="display: inline-block;"><img src="arrow-previous.svg"> Previous Question </button>
+  
+  
+          
+            
+          </div>
+
+          <div id="step-1"  class="page">
+            <div class="title">Where do you live?</div>
+            <div class="quiz-answers">
+              <div onclick="step4()"  class="quiz-answers__item" tabindex="0" role="button"><div class="quiz-checkbox"></div>Scotland</div>
+              <div onclick="step4()"  class="quiz-answers__item" tabindex="0" role="button"><div class="quiz-checkbox"></div>England</div>
+              <div onclick="step4()"  class="quiz-answers__item" tabindex="0" role="button"><div class="quiz-checkbox"></div>Wales</div>
+              <di onclick="step4()"  class="quiz-answers__item" tabindex="0" role="button"><div class="quiz-checkbox"></div>Northern Ireland</di>
+          </div>
+          <div class="app_question_support">
+                            <p class="app_question_support_heading">Why are we asking this question?</p>
+                            <p>Telling us your location allows us to offer information about the debt solutions and help available in your area.</p>
+                        </div>
+                        <button class="quiz-controls__previous prev-3 prev" style="display: inline-block;"><img src="arrow-previous.svg"> Previous Question </button>
+  
+
+            
+
+
+
+          </div>
+          <div id="step-1"  class="page">
+          <div class="title">What's your employment status?</div>
+          <div style="margin-bottom: 0px;" class="quiz-answers">
+            <div onclick="step5()"  class="quiz-answers__item" tabindex="0" role="button"><div class="quiz-checkbox"></div>Employed</div>
+            <div onclick="step5()"  class="quiz-answers__item" tabindex="0" role="button"><div class="quiz-checkbox"></div>Self-Employed</div>
+            <div onclick="step5()"  class="quiz-answers__item" tabindex="0" role="button"><div class="quiz-checkbox"></div>Zero Hour Contract</div>
+            <div onclick="step5()"  class="quiz-answers__item" tabindex="0" role="button"><div class="quiz-checkbox"></div>Retired</div>
+           
+          </div>
+          <div style="display: flex; justify-content:center;text-align:center;" >
+            <div onclick="step5()"  class="quiz-answers__item" tabindex="0" role="button"><div class="quiz-checkbox"></div>Unemployed</div>
+   
+          </div>
+        <div class="app_question_support">
+                          <p class="app_question_support_heading">Why are we asking this question?</p>
+                          <p>Telling us your location allows us to offer information about the debt solutions and help available in your area.</p>
+                      </div>
+                      <button class="quiz-controls__previous prev-4 prev" style="display: inline-block;"><img src="arrow-previous.svg"> Previous Question </button>
+
+
+        
+
+
+
+        </div>
+        
+        <div id="step-1"  class="page">
+          <div class="title">What is your full name?</div>
+          
+            <div  style="display: flex;" class="quiz-answers">
+              <input  type="text" class="text-answer" placeholder="Eg. John Doe"  id="fullname" autocomplete="off" name="fullname"  >
+          </div>
+          <div style="display: flex;flex-direction:column">
+            <div onclick="step6()"  class="quiz-controls__next" id="nextSubmit" style="display: inline-block;">Next Question</div>
+            <button class="quiz-controls__previous prev-5 prev" style="display: inline-block;"><img src="arrow-previous.svg"> Previous Question </button>
+            
+        </div>
+
+          
+        
+
+          </div>
+        
+          <div id="step-1"  class="page">
+            <div class="title">What is your email address?</div>
+            
+              <div  style="display: flex;" class="quiz-answers">
+                <input  type="text"  class="text-answer" placeholder="Eg. john@outlook.com"  id="email" autocomplete="off" name="email"  >
+            </div>
+            <div style="display: flex;flex-direction:column">
+              <div onclick="step7()"  class="quiz-controls__next" id="nextSubmit" style="display: inline-block;">Next Question</div>
+              <button class="quiz-controls__previous prev-6 prev" style="display: inline-block;"><img src="arrow-previous.svg"> Previous Question </button>
+              
+          </div>
+  
+            
+          
+  
+            </div>
+        
+            <div id="step-1"  class="page">
+              <div class="title">What is your Phone Number?</div>
+              
+                <div  style="display: flex;" class="quiz-answers">
+                  <input  type="text"  class="text-answer" placeholder="Eg. 07500 123456"  id="email" autocomplete="off" name="email"  >
+              </div>
+              <div style="padding: 0  75px;margin-bottom:15px;">
+               <p style="color: #969696;font-size:10px;">Please read our <a href="">terms &amp; conditions</a> and <a href="">privacy policy</a> before you proceed. By clicking get my results you confirm you have read and accepted them and agree to be contacted by a representative of Dee Valley Finance and / or one of their partners.  In order to proceed you will have to click on the box below to confirm you understand the above conditions. </p>
+                <div style="display:flex;justify-content:center;margin-top: 5px;margin-bottom:5px;">
+                  <!--<p style="color: #969696;font-size:10px;">I agree to be contacted via Email, Phone and SMS </p> -->
+                  <div class="yip-consent" style="margin-left:3px;"><input type="checkbox" name="phone_opt_in" id="phone_opt_in" value="Y" style="transform: scale(1.2, 1.2);"> <label style="font-size:14px;" class="d-inline" for="consent-sms">I agree to be contacted via Email, Phone and SMS</label></div>
+                </div>
+            </div>
+              <div style="display: flex;flex-direction:column">
+                <button   class="quiz-controls__next" id="nextSubmit" style="display: inline-block;">Get My Results</button>
+                  
+            </div>
+    
+              
+            
+    
+              </div>
+
+
+          
+
+
+
+
+
+
+        </form></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
